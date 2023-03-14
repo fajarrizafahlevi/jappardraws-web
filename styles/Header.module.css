@@ -1,0 +1,36 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.links li {
+  list-style: none;
+}
+
+.links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.action {
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-tertiary);
+  color: var(--font-secondary);
+  font-size: medium;
+}
+
+.action:hover {
+  cursor: pointer;
+}

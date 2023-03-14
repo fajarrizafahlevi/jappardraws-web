@@ -28,10 +28,6 @@ export default function Home() {
             <p>Specialized in 2D illustration</p>
           </article>
         </section>
-        <section className={styles.do}>
-          <h2>What do I do?</h2>
-          <p>I draws anime-styled 2d character illustration</p>
-        </section>
         <section className={styles.works}>
           <h2>My Works</h2>
           <div className={styles.grid}>

@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--background-tertiary);
+  background-color: var(--background-quaternary);
   color: var(--font-secondary);
 }
 
@@ -24,16 +24,10 @@
   font-size: 48px;
 }
 
-/* do */
-
-.do {
-  background-color: var(--background-primary);
-}
-
 /* works */
 
 .works {
-  background-color: var(--background-quaternary);
+  background-color: var(--background-tertiary);
   color: var(--font-secondary);
 }
 
