@@ -1,0 +1,9 @@
+.container {
+  flex-direction: row;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
