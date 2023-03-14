@@ -63,7 +63,6 @@
 }
 
 .item {
-  width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,6 +98,11 @@
 
 @media screen and (max-width: 420px) {
   .item {
-    flex-direction: column;
+    position: relative;
+  }
+
+  .text {
+    position: absolute;
+    bottom: 32px;
   }
 }
