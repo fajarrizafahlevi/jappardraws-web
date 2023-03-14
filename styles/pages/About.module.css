@@ -1,0 +1,24 @@
+.container {
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.image {
+  width: 160px;
+  height: 200px;
+  border-radius: 16px;
+  background-color: var(--background-primary);
+}
+
+.text {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    flex-direction: column;
+  }
+}
