@@ -2,9 +2,9 @@
   --background-primary: #edf1d6;
   --background-secondary: #9dc08b;
   --background-tertiary: #609966;
-  --background-quaternary: #3c6255;
-  --font-primary: #40513b;
+  --font-primary: black;
   --font-secondary: #edf1d6;
+  --font-tertiary: #40513b;
 }
 
 * {
@@ -27,6 +27,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 16px 24px;
+  background-color: var(--background-primary);
   color: var(--font-primary);
 }
 

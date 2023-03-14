@@ -22,9 +22,12 @@ export default function Home() {
       <main>
         <section className={styles.hero}>
           <article className={styles.intro}>
-            <p className={styles.name}>Hello, I&apos;m Jappar!</p>
+            <p className={styles.name}>Hello! I&apos;m Jappar, a</p>
             <span className={styles.title}>2D Artist</span>
-            <p>Specialized in 2D illustration</p>
+            <p className={styles.description}>
+              A freelance artist specialized in <br />
+              2D anime-styled character illustration
+            </p>
           </article>
         </section>
         <section className={styles.works}>
