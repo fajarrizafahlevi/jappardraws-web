@@ -14,11 +14,6 @@
   list-style: none;
 }
 
-.links li a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .action {
   border: none;
   border-radius: 8px;

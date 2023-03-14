@@ -31,15 +31,6 @@ header {
   color: var(--font-primary);
 }
 
-nav ul li {
-  list-style: none;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: inherit;
-}
-
 main {
   max-width: 100vw;
   min-height: 100vh;
@@ -57,11 +48,15 @@ section {
 footer {
   padding: 16px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--background-tertiary);
   color: var(--font-secondary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media screen and (max-width: 420px) {
