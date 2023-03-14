@@ -21,7 +21,7 @@ header {
   position: fixed;
   top: 0;
   height: 72px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,4 +60,10 @@ footer {
   justify-content: center;
   background-color: var(--background-tertiary);
   color: var(--font-secondary);
+}
+
+@media screen and (max-width: 420px) {
+  main {
+    text-align: center;
+  }
 }

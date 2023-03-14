@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
-import sample from '@/public/images/sample.jpg';
 import Image from 'next/image';
 
 export default function Home() {
@@ -35,40 +34,38 @@ export default function Home() {
         </section>
         <section className={styles.works}>
           <h2>My Works</h2>
-          <Image
-            src={sample}
-            alt="sample"
-            width={200}
-            height={300}
-            className={styles.sample}
-          />
+          <div className={styles.grid}>
+            <div className={styles.sample} />
+            <div className={styles.sample} />
+            <div className={styles.sample} />
+          </div>
         </section>
         <section className={styles.commission}>
           <h2>Commission Menu</h2>
           <div className={styles.list}>
             <div className={styles.item}>
-              <div className={styles.text}>
-                <h3>Color Sketch</h3>
-                <p>Start from</p>
-                <span>80K IDR / 15 USD</span>
-              </div>
-              <div className={styles.image}></div>
-            </div>
-            <div className={styles.item}>
-              <div className={styles.image}></div>
+              <div className={styles.image} />
               <div className={styles.text}>
                 <h3>Color Sketch</h3>
                 <p>Start from</p>
                 <span>80K IDR / 15 USD</span>
               </div>
             </div>
-            <div className={styles.item}>
+            <div className={`${styles.item} ${styles.reverse}`}>
+              <div className={styles.image} />
               <div className={styles.text}>
-                <h3>Color Sketch</h3>
+                <h3>Cel Shade</h3>
                 <p>Start from</p>
                 <span>80K IDR / 15 USD</span>
               </div>
-              <div className={styles.image}></div>
+            </div>
+            <div className={styles.item}>
+              <div className={styles.image} />
+              <div className={styles.text}>
+                <h3>Full Render</h3>
+                <p>Start from</p>
+                <span>80K IDR / 15 USD</span>
+              </div>
             </div>
           </div>
         </section>

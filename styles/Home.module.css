@@ -37,10 +37,16 @@
   color: var(--font-secondary);
 }
 
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .sample {
-  object-fit: cover;
-  object-position: center 0;
-  border-radius: 16px;
+  width: 200px;
+  height: 300px;
+  background-color: var(--background-primary);
 }
 
 /* commissions */
@@ -59,8 +65,17 @@
 .item {
   width: 500px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  gap: 32px;
+}
+
+.item h3 {
+  margin-bottom: 16px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }
 
 .image {
@@ -68,4 +83,22 @@
   height: 300px;
   border-radius: 16px;
   background-color: var(--background-primary);
+}
+
+@media screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .grid {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .item {
+    flex-direction: column;
+  }
 }
