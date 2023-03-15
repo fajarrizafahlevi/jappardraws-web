@@ -16,8 +16,10 @@ export default function Header() {
   return (
     <header>
       <h1 className={styles.brand}>
-        jappar<span style={{ color: 'gray' }}>draws</span>
-        <span style={{ color: 'gold' }}>.</span>
+        <Link href="/">
+          jappar<span style={{ color: 'gray' }}>draws</span>
+          <span style={{ color: 'gold' }}>.</span>
+        </Link>
       </h1>
       <button
         className={styles.menu}

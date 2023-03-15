@@ -10,3 +10,9 @@
   max-width: 560px;
   color: var(--font-secondary);
 }
+
+@media screen and (max-width: 420px) {
+  .summary {
+    text-align: center;
+  }
+}
