@@ -15,6 +15,9 @@
   margin: 0 auto;
   width: 60%;
   color: var(--font-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .name {
@@ -22,11 +25,11 @@
 }
 
 .title {
-  font-size: 54px;
+  font-size: 48px;
   font-weight: bold;
   color: var(--font-quaternary);
 }
 
 .job {
-  font-size: 16px;
+  font-size: 12px;
 }

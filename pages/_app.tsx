@@ -1,16 +1,16 @@
 import type { AppProps } from 'next/app';
-import { Roboto } from 'next/font/google';
+import { Comfortaa } from 'next/font/google';
 import Layout from '@/components/layout';
 import '@/styles/globals.css';
 
-const roboto = Roboto({
+const comfortaa = Comfortaa({
   weight: '400',
   subsets: ['latin'],
 });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={roboto.className}>
+    <main className={comfortaa.className}>
       <Layout>
         <Component {...pageProps} />
       </Layout>
