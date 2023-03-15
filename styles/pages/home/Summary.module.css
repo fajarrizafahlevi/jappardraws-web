@@ -1,4 +1,6 @@
 .summary {
+  flex-direction: row;
+  align-items: flex-start;
   background-color: var(--background-tertiary);
 }
 
@@ -13,6 +15,8 @@
 
 @media screen and (max-width: 420px) {
   .summary {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 }
