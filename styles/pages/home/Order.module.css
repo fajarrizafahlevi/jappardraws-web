@@ -1,13 +1,10 @@
 .order {
-  background-color: var(--background-secondary);
-}
-
-.container {
-  display: flex;
-  padding: 24px;
-  border-radius: 16px;
   background-color: var(--background-tertiary);
   color: var(--font-secondary);
+}
+
+.order h2 {
+  color: var(--font-quaternary);
 }
 
 .list {

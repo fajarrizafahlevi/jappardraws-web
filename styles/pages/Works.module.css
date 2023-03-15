@@ -1,7 +1,7 @@
 .works {
   min-height: 100vh;
   justify-content: flex-start;
-  background-color: var(--background-secondary);
+  background-color: var(--background-primary);
 }
 
 .works h2 {
@@ -18,7 +18,7 @@
   width: 200px;
   height: 200px;
   border-radius: 16px;
-  background-color: var(--background-primary);
+  background-color: var(--background-secondary);
 }
 
 @media screen and (max-width: 800px) {
