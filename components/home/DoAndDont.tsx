@@ -15,7 +15,7 @@ export default function DoAndDont() {
         </div>
         <div className={styles.container}>
           <p>
-            It <span className={styles.can}>CAN</span> be a
+            It <span className={styles.can}>CAN</span> be a:
           </p>
           <ul className={styles.list}>
             <li>Humanoid</li>
