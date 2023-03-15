@@ -1,4 +1,4 @@
-import styles from '@/styles/pages/home/TermsOfService.module.css';
+import styles from '@/styles/pages/TermsOfService.module.css';
 
 export default function TermsOfService() {
   return (

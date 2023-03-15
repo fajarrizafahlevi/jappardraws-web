@@ -5,7 +5,6 @@ import Summary from '@/components/home/Summary';
 import Works from '@/components/home/Works';
 import Commissions from '@/components/home/Commissions';
 import DoAndDont from '@/components/home/DoAndDont';
-import TermsOfService from '@/components/home/TermsOfService';
 import Order from '@/components/home/Order';
 
 export default function Home() {
@@ -32,7 +31,6 @@ export default function Home() {
         <Works />
         <Commissions />
         <DoAndDont />
-        <TermsOfService />
         <Order />
       </main>
     </>
