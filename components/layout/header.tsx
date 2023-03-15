@@ -6,7 +6,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   function openMenu() {
-    setIsOpen(!isOpen);
+    setIsOpen(true);
   }
 
   function closeMenu() {
@@ -34,13 +34,28 @@ export default function Header() {
         </button>
         <ul className={styles.links}>
           <li>
-            <Link href="/">Home</Link>
+            <Link
+              href="/"
+              onClick={closeMenu}
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link
+              href="/about"
+              onClick={closeMenu}
+            >
+              About
+            </Link>
           </li>
           <li>
-            <Link href="/about">Works</Link>
+            <Link
+              href="/works"
+              onClick={closeMenu}
+            >
+              Works
+            </Link>
           </li>
         </ul>
         <button className={styles.action}>Contact</button>

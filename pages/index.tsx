@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import styles from '@/styles/pages/Home.module.css';
 import Hero from '@/components/home/Hero';
 import Summary from '@/components/home/Summary';
 import Works from '@/components/home/Works';

@@ -39,7 +39,7 @@ main {
 }
 
 section {
-  padding: 64px 32px;
+  padding: 72px 32px;
   display: flex;
   gap: 32px;
   flex-direction: column;
