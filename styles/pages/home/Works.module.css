@@ -1,0 +1,27 @@
+.works {
+  background-color: var(--background-secondary);
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sample {
+  width: 200px;
+  height: 300px;
+  background-color: var(--background-primary);
+}
+
+@media screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .grid {
+    grid-template-columns: auto;
+  }
+}

@@ -1,0 +1,12 @@
+.summary {
+  background-color: var(--background-tertiary);
+}
+
+.summary h2 {
+  color: var(--font-quaternary);
+}
+
+.history {
+  max-width: 560px;
+  color: var(--font-secondary);
+}

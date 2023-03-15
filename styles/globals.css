@@ -1,10 +1,12 @@
 :root {
-  --background-primary: #edf1d6;
-  --background-secondary: #9dc08b;
-  --background-tertiary: #609966;
-  --font-primary: black;
-  --font-secondary: #edf1d6;
-  --font-tertiary: #40513b;
+  --background-primary: #f7f7f7;
+  --background-secondary: #e7e7e7;
+  --background-tertiary: #171717;
+  --background-quaternary: #070707;
+  --font-primary: #070707;
+  --font-secondary: #f7f7f7;
+  --font-tertiary: #d7d7d7;
+  --font-quaternary: gold;
 }
 
 * {
@@ -37,9 +39,9 @@ main {
 }
 
 section {
-  padding: 72px 32px;
+  padding: 64px 32px;
   display: flex;
-  gap: 48px;
+  gap: 32px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -57,10 +59,4 @@ footer {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-@media screen and (max-width: 420px) {
-  main {
-    text-align: center;
-  }
 }
