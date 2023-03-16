@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Hero from '@/components/home/Hero';
-import Summary from '@/components/home/Summary';
-import Works from '@/components/home/Works';
-import Commissions from '@/components/home/Commissions';
-import DoAndDont from '@/components/home/DoAndDont';
-import Order from '@/components/home/Order';
+import About from '@/components/home/About';
+import Portfolio from '@/components/home/Portfolio';
+import Service from '@/components/home/Services';
+import CallToAction from '@/components/home/CallToAction';
+import Testimonies from '@/components/home/Testimonies';
 
 export default function Home() {
   return (
@@ -26,11 +26,11 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
-        <Summary />
-        <Works />
-        <Commissions />
-        <DoAndDont />
-        <Order />
+        <About />
+        <Service />
+        <Portfolio />
+        <Testimonies />
+        <CallToAction />
       </main>
     </>
   );

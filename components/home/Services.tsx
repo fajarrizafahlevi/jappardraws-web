@@ -1,4 +1,4 @@
-export default function Commissions() {
+export default function Service() {
   const menu = [
     {
       id: 1,
@@ -19,16 +19,16 @@ export default function Commissions() {
 
   return (
     <section className="flex-col">
-      <h2>Commission</h2>
+      <h2>The Menu</h2>
       <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3">
         {menu.map((item) => (
           <div
             key={item.id}
             className="relative flex justify-center gap-8"
           >
-            <div className="w-60 h-80 rounded bg-slate-50" />
+            <div className="w-60 h-80 rounded bg-gray-900" />
             <div className="absolute bottom-8">
-              <h3>{item.style}</h3>
+              <h3 className="font-bold">{item.style}</h3>
               <p>Start from</p>
               <span>{item.price}</span>
             </div>

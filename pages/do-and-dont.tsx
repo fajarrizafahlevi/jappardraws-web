@@ -1,9 +1,8 @@
-import styles from '@/styles/pages/home/DoAndDont.module.css';
 import Link from 'next/link';
 
 export default function DoAndDont() {
   return (
-    <section className="bg-slate-50">
+    <section className="h-screen pb-0">
       <h2>Do and Don&apos;t</h2>
       <article className="flex flex-col text-left gap-4">
         <div>
@@ -34,7 +33,6 @@ export default function DoAndDont() {
           </ul>
         </div>
       </article>
-      <Link href="/tos">Check my complete terms of service here</Link>
     </section>
   );
 }

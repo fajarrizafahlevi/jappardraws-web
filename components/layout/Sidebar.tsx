@@ -9,7 +9,7 @@ export default function Sidebar({ isOpen, closeMenu }: { isOpen: boolean; closeM
       }`}
     >
       <button
-        className="border-none rounded px-3 py-2 bg-gray-900 text-xl"
+        className="border-none rounded text-2xl"
         onClick={closeMenu}
       >
         &#10006;
