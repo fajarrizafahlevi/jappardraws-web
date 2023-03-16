@@ -1,39 +1,39 @@
-import styles from '@/styles/pages/home/Commissions.module.css';
-
 export default function Commissions() {
+  const menu = [
+    {
+      id: 1,
+      style: 'Color Sketch',
+      price: '80K IDR / 15 USD',
+    },
+    {
+      id: 2,
+      style: 'Cel Shade',
+      price: '80K IDR / 15 USD',
+    },
+    {
+      id: 3,
+      style: 'Full Render',
+      price: '100K IDR / 20 USD',
+    },
+  ];
+
   return (
-    <section className={styles.commissions}>
-      <h2>Commissions</h2>
-      <p className={styles.description}>
-        I will draw your desired bust up character in my style! You can choose the coloring style
-        that you prefer and upgrade into half body or full body if you want to! You will get
-        4000x5000 pixel, 300 dpi, .jpg and .png file.
-      </p>
-      <div className={styles.layout}>
-        <div className={styles.item}>
-          <div className={styles.image} />
-          <div className={styles.text}>
-            <h3>Color Sketch</h3>
-            <p>Start from</p>
-            <span>80K IDR / 15 USD</span>
+    <section className="flex-col">
+      <h2>Commission</h2>
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3">
+        {menu.map((item) => (
+          <div
+            key={item.id}
+            className="relative flex justify-center gap-8"
+          >
+            <div className="w-60 h-80 rounded bg-slate-50" />
+            <div className="absolute bottom-8">
+              <h3>{item.style}</h3>
+              <p>Start from</p>
+              <span>{item.price}</span>
+            </div>
           </div>
-        </div>
-        <div className={`${styles.item} ${styles.reverse}`}>
-          <div className={styles.image} />
-          <div className={styles.text}>
-            <h3>Cel Shade</h3>
-            <p>Start from</p>
-            <span>80K IDR / 15 USD</span>
-          </div>
-        </div>
-        <div className={styles.item}>
-          <div className={styles.image} />
-          <div className={styles.text}>
-            <h3>Full Render</h3>
-            <p>Start from</p>
-            <span>80K IDR / 15 USD</span>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

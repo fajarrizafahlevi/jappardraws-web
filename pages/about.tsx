@@ -1,11 +1,8 @@
-import React from 'react';
-import styles from '@/styles/pages/About.module.css';
-
 export default function about() {
   return (
-    <section className={styles.about}>
-      <div className={styles.image} />
-      <div className={styles.text}>
+    <section className="sm:flex-row h-screen pb-0">
+      <div className="w-40 h-60 bg-slate-50 rounded" />
+      <div className="max-w-lg flex flex-col gap-4">
         <h2>About me</h2>
         <p>
           I started learning character illustration seriously since 2017. Then, become a freelance

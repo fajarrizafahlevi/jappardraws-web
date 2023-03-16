@@ -1,66 +1,33 @@
-import React, { useState } from 'react';
 import Link from 'next/link';
-import styles from '@/styles/components/Header.module.css';
 
-export default function Header() {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-
-  function openMenu() {
-    setIsOpen(true);
-  }
-
-  function closeMenu() {
-    setIsOpen(false);
-  }
-
+export default function Header({ openMenu }: { openMenu: () => void }) {
   return (
-    <header>
-      <h1 className={styles.brand}>
+    <header className="z-10 fixed top-0 h-20 w-full flex justify-between items-center px-6 py-4 bg-white">
+      <h1 className="text-3xl font-bold">
         <Link href="/">
-          jappar<span style={{ color: 'gray' }}>draws</span>
-          <span style={{ color: 'gold' }}>.</span>
+          jappar<span className="text-gray-500">draws</span>
+          <span className="text-yellow-500">.</span>
         </Link>
       </h1>
       <button
-        className={styles.menu}
+        className="sm:hidden border-none rounded px-3 py-2 bg-black text-white text-xl"
         onClick={openMenu}
       >
         &#9776;
       </button>
-      <nav className={`${styles.navigation} ${isOpen ? styles.open : ''}`}>
-        <button
-          className={styles.close}
-          onClick={closeMenu}
-        >
-          &#10006;
-        </button>
-        <ul className={styles.links}>
+      <nav className="hidden sm:flex items-center gap-8">
+        <ul className="flex gap-8">
           <li>
-            <Link
-              href="/"
-              onClick={closeMenu}
-            >
-              Home
-            </Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <Link
-              href="/about"
-              onClick={closeMenu}
-            >
-              About
-            </Link>
+            <Link href="/about">About</Link>
           </li>
           <li>
-            <Link
-              href="/works"
-              onClick={closeMenu}
-            >
-              Works
-            </Link>
+            <Link href="/works">Works</Link>
           </li>
         </ul>
-        <button className={styles.action}>Contact</button>
+        <button className="border-none rounded px-3 py-2 bg-black text-yellow-300">Contact</button>
       </nav>
     </header>
   );

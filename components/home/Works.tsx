@@ -1,13 +1,11 @@
-import styles from '@/styles/pages/home/Works.module.css';
-
 export default function Works() {
   return (
-    <section className={styles.works}>
+    <section className="bg-slate-50">
       <h2>My Works</h2>
-      <div className={styles.grid}>
-        <div className={styles.sample} />
-        <div className={styles.sample} />
-        <div className={styles.sample} />
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3">
+        <div className="w-60 h-80 rounded bg-white" />
+        <div className="w-60 h-80 rounded bg-white" />
+        <div className="w-60 h-80 rounded bg-white" />
       </div>
     </section>
   );

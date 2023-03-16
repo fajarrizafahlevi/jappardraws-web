@@ -2,11 +2,11 @@ import styles from '@/styles/pages/TermsOfService.module.css';
 
 export default function TermsOfService() {
   return (
-    <section className={styles.tos}>
+    <section className="h-screen pb-0">
       <h2>Terms of Service</h2>
-      <div className={styles.layout}>
-        <div className={styles.container}>
-          <ul className={styles.rules}>
+      <div className="flex flex-col gap-8">
+        <div className="flex p-6 bg-slate-50 rounded">
+          <ul className="list-disc pl-3">
             <li>Price is for personal use (2x - 3x for commercial use)</li>
             <li>Full upfront or 50% payment upfront, 50% after sketch approved</li>
             <li>No refund once I started working on the commission</li>
@@ -20,11 +20,11 @@ export default function TermsOfService() {
           </ul>
         </div>
         <div>
-          <h3 className={styles.note}>Note</h3>
+          <h3 className="text-orange-500">Note:</h3>
           <p>I can work from description, but visual reference work best for me!</p>
         </div>
         <div>
-          <h3 className={styles.important}>IMPORTANT!</h3>
+          <h3 className="text-red-500">IMPORTANT!</h3>
           <p>By commissioning me, you are agreed to my Terms of Service</p>
         </div>
       </div>
