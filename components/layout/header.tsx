@@ -6,11 +6,11 @@ export default function Header({ openMenu }: { openMenu: () => void }) {
       <h1 className="text-3xl font-bold">
         <Link href="/">
           jappar<span className="text-gray-500">draws</span>
-          <span className="text-amber-300">.</span>
+          <span className="text-yellow-300">.</span>
         </Link>
       </h1>
       <button
-        className="sm:hidden border-none text-3xl"
+        className="sm:hidden border-none px-2 py-1 text-xl"
         onClick={openMenu}
       >
         &#9776;

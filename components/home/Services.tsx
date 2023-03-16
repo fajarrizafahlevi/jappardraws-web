@@ -28,7 +28,7 @@ export default function Service() {
           >
             <div className="w-60 h-80 rounded bg-gray-900" />
             <div className="absolute bottom-8">
-              <h3 className="font-bold text-amber-300">{item.style}</h3>
+              <h3 className="font-bold text-yellow-300">{item.style}</h3>
               <p>Start from</p>
               <span>{item.price}</span>
             </div>

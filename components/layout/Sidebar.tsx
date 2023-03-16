@@ -4,17 +4,17 @@ import React from 'react';
 export default function Sidebar({ isOpen, closeMenu }: { isOpen: boolean; closeMenu: () => void }) {
   return (
     <nav
-      className={`fixed inset-y-0 z-50 right-0 w-full p-8 flex flex-col gap-8 bg-black text-white transform transition-transform ease-in-out duration-300 ${
+      className={`fixed inset-y-0 z-50 right-0 w-full items-center p-8 flex flex-col gap-8 bg-black text-white transform transition-transform ease-in-out duration-300 ${
         isOpen ? 'translate-x-0' : 'translate-x-full'
       }`}
     >
       <button
-        className="border-none rounded text-2xl"
+        className="w-fit border-none rounded text-2xl"
         onClick={closeMenu}
       >
         &#10006;
       </button>
-      <ul className="flex flex-col gap-3">
+      <ul className="flex flex-col items-center gap-4">
         <li>
           <Link
             href="/"

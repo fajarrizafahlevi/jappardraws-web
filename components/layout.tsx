@@ -25,7 +25,7 @@ export default function Layout({ children }: LayoutProps) {
         isOpen={isOpen}
         closeMenu={closeMenu}
       />
-      <main className="max-w-5xl min-h-screen mx-auto">{children}</main>
+      <main className="min-h-screen mx-auto">{children}</main>
       <Footer />
     </>
   );

@@ -1,8 +1,12 @@
+import Link from 'next/link';
+
 export default function CallToAction() {
   return (
-    <section>
+    <section className="bg-gray-900">
       <h2>Ready to order?</h2>
-      <button>Contact me</button>
+      <Link href="/contact">
+        <button>Contact me</button>
+      </Link>
     </section>
   );
 }

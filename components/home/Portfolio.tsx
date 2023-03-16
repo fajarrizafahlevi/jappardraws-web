@@ -1,9 +1,9 @@
 export default function Portfolio() {
   return (
-    <section>
+    <section className="bg-gray-900">
       <h2>Recent Works</h2>
       <div>
-        <div className="w-96 h-64 rounded bg-gray-900" />
+        <div className="sm:w-96 w-72 h-64 rounded bg-yellow-300" />
       </div>
     </section>
   );
