@@ -1,8 +1,6 @@
-import Link from 'next/link';
-
 export default function DoAndDont() {
   return (
-    <section className="h-screen pb-0">
+    <section className="min-h-screen pb-0">
       <h2>Do and Don&apos;t</h2>
       <article className="flex flex-col text-left gap-4">
         <div>

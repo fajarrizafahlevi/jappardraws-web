@@ -2,7 +2,7 @@ import styles from '@/styles/pages/TermsOfService.module.css';
 
 export default function TermsOfService() {
   return (
-    <section className="h-screen pb-0">
+    <section className="min-h-screen pb-0">
       <h2>Terms of Service</h2>
       <div className="flex flex-col gap-8">
         <ul className="list-disc pl-4">

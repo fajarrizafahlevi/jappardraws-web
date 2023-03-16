@@ -6,7 +6,7 @@ export default function Header({ openMenu }: { openMenu: () => void }) {
       <h1 className="text-3xl font-bold">
         <Link href="/">
           jappar<span className="text-gray-500">draws</span>
-          <span className="text-yellow-500">.</span>
+          <span className="text-amber-300">.</span>
         </Link>
       </h1>
       <button
@@ -27,7 +27,9 @@ export default function Header({ openMenu }: { openMenu: () => void }) {
             <Link href="/works">Works</Link>
           </li>
         </ul>
-        <button className="border-none rounded px-3 py-2 bg-yellow-300 text-black">Contact</button>
+        <Link href="/contact">
+          <button>Contact</button>
+        </Link>
       </nav>
     </header>
   );
