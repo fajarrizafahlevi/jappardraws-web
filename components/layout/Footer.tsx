@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="text-yellow-500">.</span>
             </Link>
           </h1>
-          <p className="max-w-xs text-sm">Draw 2D anime-styled character.</p>
+          <p className="max-w-xs text-sm">Draws 2D anime-styled character.</p>
           <div className="flex gap-4 text-xl">
             <Link
               href="https://facebook.com/jappardraws"
@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col items-center sm:items-start">
-          <h3 className="font-bold mb-3 text-xl">Link</h3>
+          <h3 className="font-bold mb-3 text-xl">Links</h3>
           <Link href="/do-and-dont">Do and Don&apos;t</Link>
           <Link href="/terms-of-service">Terms of Service</Link>
           <Link href="/contact">Contact</Link>

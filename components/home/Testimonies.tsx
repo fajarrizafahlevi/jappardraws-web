@@ -35,7 +35,9 @@ export default function Testimonies() {
             <div className="w-64 h-80 rounded bg-gray-900" />
             <div className="absolute top-0 p-6 text-center">
               <h3 className="font-bold text-yellow-300">{review.name}</h3>
-              <span className="text-xs text-gray-500">on {review.platform}</span>
+              <span className="text-xs text-gray-500">
+                on <span className="font-bold">{review.platform}</span>
+              </span>
               <p className="text-sm mt-4">{review.opinion}</p>
             </div>
           </div>

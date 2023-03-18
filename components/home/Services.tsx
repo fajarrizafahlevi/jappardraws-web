@@ -48,7 +48,7 @@ export default function Service() {
         {menu.map((item) => (
           <div
             key={item.id}
-            className="relative container w-60 h-80 rounded bg-gray-900 overflow-hidden hover:cursor-pointer"
+            className="relative container w-60 h-80 rounded bg-gray-900 overflow-hidden"
           >
             <Image
               src={item.sample}
