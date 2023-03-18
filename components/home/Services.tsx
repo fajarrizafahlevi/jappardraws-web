@@ -1,5 +1,8 @@
-import sample from '@/public/images/sample.jpg';
 import Image from 'next/image';
+import sample from '@/public/images/sample.jpg';
+import colorSketch from '@/public/images/colorSketch.jpg';
+import celShade from '@/public/images/celShade.jpg';
+import fullRender from '@/public/images/fullRender.jpg';
 
 export default function Service() {
   const menu = [
@@ -12,6 +15,7 @@ export default function Service() {
         halfBody: '160K IDR / 25 USD',
         fullBody: '240K IDR / 35 USD',
       },
+      sample: colorSketch,
     },
     {
       id: 2,
@@ -22,6 +26,7 @@ export default function Service() {
         halfBody: '160K IDR / 25 USD',
         fullBody: '240K IDR / 35 USD',
       },
+      sample: celShade,
     },
     {
       id: 3,
@@ -32,6 +37,7 @@ export default function Service() {
         halfBody: '200K IDR / 30 USD',
         fullBody: '300K IDR / 40 USD',
       },
+      sample: fullRender,
     },
   ];
 
@@ -45,13 +51,13 @@ export default function Service() {
             className="relative container w-60 h-80 rounded bg-gray-900 overflow-hidden hover:cursor-pointer"
           >
             <Image
-              src={sample}
+              src={item.sample}
               alt="sample"
               width={240}
               height={320}
-              className="absolute rounded object-cover"
+              className="absolute w-full h-full object-cover object-top"
             />
-            <div className="absolute z-10 w-full h-full p-8 rounded bg-gradient-to-t from-black flex flex-col justify-end items-center">
+            <div className="absolute z-10 w-full h-full p-8 bg-gradient-to-t from-black flex flex-col justify-end items-center">
               <h3 className="font-bold text-yellow-300 mb-3">{item.style}</h3>
               <div className="text-xs">
                 <p>Head-shot: {item.price.headShot}</p>
