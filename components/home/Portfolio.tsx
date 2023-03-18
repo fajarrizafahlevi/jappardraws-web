@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Portfolio() {
   return (
-    <section className="bg-gray-900">
+    <section>
       <h2>Recent Work</h2>
       <Image
         src={sample}
