@@ -1,3 +1,6 @@
+import sample from '@/public/images/sample.jpg';
+import Image from 'next/image';
+
 export default function Service() {
   const menu = [
     {
@@ -39,9 +42,16 @@ export default function Service() {
         {menu.map((item) => (
           <div
             key={item.id}
-            className="container w-60 h-80 p-8 rounded bg-gray-900 flex flex-col justify-end items-center hover:cursor-pointer"
+            className="relative container w-60 h-80 rounded bg-gray-900 overflow-hidden hover:cursor-pointer"
           >
-            <div>
+            <Image
+              src={sample}
+              alt="sample"
+              width={240}
+              height={320}
+              className="absolute rounded object-cover"
+            />
+            <div className="absolute z-10 w-full h-full p-8 rounded bg-gradient-to-t from-black flex flex-col justify-end items-center">
               <h3 className="font-bold text-yellow-300 mb-3">{item.style}</h3>
               <div className="text-xs">
                 <p>Head-shot: {item.price.headShot}</p>

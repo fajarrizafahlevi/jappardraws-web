@@ -4,7 +4,7 @@ import React from 'react';
 export default function Sidebar({ isOpen, closeMenu }: { isOpen: boolean; closeMenu: () => void }) {
   return (
     <nav
-      className={`fixed inset-y-0 z-50 right-0 w-full items-center p-8 flex flex-col gap-8 bg-black text-white transform transition-transform ease-in-out duration-300 ${
+      className={`fixed inset-y-0 z-30 right-0 w-full items-center p-8 flex flex-col gap-8 bg-black text-white transform transition-transform ease-in-out duration-300 ${
         isOpen ? 'translate-x-0' : 'translate-x-full'
       }`}
     >
