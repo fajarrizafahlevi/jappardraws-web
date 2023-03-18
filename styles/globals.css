@@ -23,3 +23,11 @@ button {
   background-color: #fbd24e;
   color: black;
 }
+
+th {
+  text-align: left;
+}
+
+td {
+  text-align: right;
+}

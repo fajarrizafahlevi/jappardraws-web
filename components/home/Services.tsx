@@ -59,12 +59,24 @@ export default function Service() {
             />
             <div className="absolute z-10 w-full h-full p-8 bg-gradient-to-t from-black flex flex-col justify-end items-center">
               <h3 className="font-bold text-yellow-300 mb-3">{item.style}</h3>
-              <div className="text-xs">
-                <p>Head-shot: {item.price.headShot}</p>
-                <p>Bust-up: {item.price.bustUp}</p>
-                <p>half-body: {item.price.halfBody}</p>
-                <p>Full-body: {item.price.fullBody}</p>
-              </div>
+              <table className="text-xs">
+                <tr>
+                  <th>Head-shot</th>
+                  <td>{item.price.headShot}</td>
+                </tr>
+                <tr>
+                  <th>Bust-uth</th>
+                  <td>{item.price.bustUp}</td>
+                </tr>
+                <tr>
+                  <th>half-body</th>
+                  <td>{item.price.halfBody}</td>
+                </tr>
+                <tr>
+                  <th>Full-body</th>
+                  <td>{item.price.fullBody}</td>
+                </tr>
+              </table>
             </div>
           </div>
         ))}
