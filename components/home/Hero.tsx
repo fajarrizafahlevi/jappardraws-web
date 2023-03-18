@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import sample from '@/public/images/sample.jpg';
+import jappar from '@/public/images/jappar.png';
 
 export default function Hero() {
   return (
     <section
-      className="relative px-8 md:px-16 lg:px-20 pb-0 bg-black items-start"
+      className="px-8 md:px-16 lg:px-20 pb-0 bg-black items-start"
       style={{ height: '80vh' }}
     >
-      <div className="absolute bg-gradient-to-t from-black flex flex-col gap-3">
+      <div className="bg-gradient-to-t from-black flex flex-col gap-3">
         <article className="flex flex-col gap-2">
           <div>
             <h2 className="text-4xl">Manifest your</h2>
