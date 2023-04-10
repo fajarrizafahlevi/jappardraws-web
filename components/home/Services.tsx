@@ -1,8 +1,7 @@
 import Image from 'next/image';
-import sample from '@/public/images/sample.jpg';
-import colorSketch from '@/public/images/colorSketch.jpg';
-import celShade from '@/public/images/celShade.jpg';
-import fullRender from '@/public/images/fullRender.jpg';
+import colorSketch from '@/public/images/samples/colorSketch.jpg';
+import celShade from '@/public/images/samples/celShade.jpg';
+import fullRender from '@/public/images/samples/fullRender.jpg';
 
 export default function Service() {
   const menu = [
@@ -65,7 +64,7 @@ export default function Service() {
                   <td>{item.price.headShot}</td>
                 </tr>
                 <tr>
-                  <th>Bust-uth</th>
+                  <th>Bust-up</th>
                   <td>{item.price.bustUp}</td>
                 </tr>
                 <tr>

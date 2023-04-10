@@ -1,4 +1,4 @@
-import sample from '@/public/images/sample.jpg';
+import recent from '@/public/images/recent.jpg';
 import Image from 'next/image';
 
 export default function Portfolio() {
@@ -6,8 +6,8 @@ export default function Portfolio() {
     <section>
       <h2>Recent Work</h2>
       <Image
-        src={sample}
-        alt="sample"
+        src={recent}
+        alt="recent"
         width={240}
         height={320}
         className="rounded"
