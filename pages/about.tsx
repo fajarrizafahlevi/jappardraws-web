@@ -3,9 +3,9 @@ export default function about() {
     <section className="mx-auto max-w-5xl min-h-screen pb-0">
       <h2>About me</h2>
       <p>
-        It started in mid-2017, and my internship was delayed to October. Since there weren't many
-        things to do, I thought of spending my holiday learning more about drawing. I came across a
-        YouTuber called Ross Draws, which inspired me to start my art journey.
+        It started in mid-2017, and my internship was delayed to October. Since there weren&apos;t
+        many things to do, I thought of spending my holiday learning more about drawing. I came
+        across a YouTuber called Ross Draws, which inspired me to start my art journey.
         <br />
         <br />
         I learned some fundamentals from various videos on youtube and practiced them in my
