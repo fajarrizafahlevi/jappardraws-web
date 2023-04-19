@@ -3,23 +3,24 @@ export default function about() {
     <section className="mx-auto max-w-5xl min-h-screen pb-0">
       <h2>About me</h2>
       <p>
-        It was started almost six years ago, in mid-2017. My internship was delayed to October.
-        Since there were not many things to do, I thought of spending my holiday learning more about
-        drawing.
+        It started in mid-2017, and my internship was delayed to October. Since there weren't many
+        things to do, I thought of spending my holiday learning more about drawing. I came across a
+        YouTuber called Ross Draws, which inspired me to start my art journey.
         <br />
         <br />
-        I started my art journey by drawing every day and watching some youtube videos to learn the
-        fundamentals. Apparently, someone I knew from the singing community had a little problem.
-        Her group had a stickers project that had been abandoned for a few months. I asked her if I
-        could help them in any way since I also have to practice my drawing skill. Fortunately, they
-        let me help to line art their stickers. Since I do not have a pen tablet yet, I did the line
-        art using a mouse. It was kinda difficult, but I was glad the drawing software feature
-        allowed me to finish the job. A friend there started to commission me and even helped me to
-        buy my first pen tablet, which I still use today.
+        I learned some fundamentals from various videos on youtube and practiced them in my
+        sketchbook. I also tried digital art using a mouse since I cannot afford a drawing tablet.
+        Later, I got a project in the singing community to help a group with their LINE stickers,
+        specifically the line art part. At that time, I was using a free drawing software called
+        Medibang. It has a good stabilizer, which allows me to draw and finish the job even only
+        using a mouse. After that, I focused on digital art and started to open commissions to
+        people I know from the community. I finally bought my first drawing tablet: Wacom Intuos
+        Draw CTL-490, which I still use today.
         <br />
-        <br />I keep doing commissions, but only for people I knew there. I prepared a few things
-        and finally opened the commission to the public on various platforms such as Facebook,
-        Artist&Clients, Sketchmob, and Fiverr. Until today, I have finished almost 100 orders.
+        <br />
+        In early 2020, I prepared a few things to open my art commissions to the public on various
+        platforms such as Facebook, Artist&Clients, Sketchmob, and Fiverr. Until today, I have
+        finished almost 100 orders.
       </p>
     </section>
   );
