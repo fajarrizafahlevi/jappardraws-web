@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 
 export default function Works() {
@@ -8,62 +9,68 @@ export default function Works() {
   };
 
   return (
-    <section>
-      <h2>Works</h2>
+    <>
+      <Head>
+        <title>Works</title>
+      </Head>
 
-      <h3>Color Sketch</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {works.colorSketch.reverse().map((image, index) => (
-          <div
-            key={index}
-            className="relative container w-60 h-80 rounded bg-gray-900 overflow-hidden"
-          >
-            <Image
-              src={`/images/works/colorSketch/${image}`}
-              alt="sample"
-              width={240}
-              height={320}
-              className="absolute w-full h-full object-cover object-top"
-            />
-          </div>
-        ))}
-      </div>
+      <section>
+        <h2>Works</h2>
 
-      <h3>Cel Shade</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {works.celShade.reverse().map((image, index) => (
-          <div
-            key={index}
-            className="relative container w-60 h-80 rounded bg-gray-900 overflow-hidden"
-          >
-            <Image
-              src={`/images/works/celShade/${image}`}
-              alt="sample"
-              width={240}
-              height={320}
-              className="absolute w-full h-full object-cover object-top"
-            />
-          </div>
-        ))}
-      </div>
+        <h3>Color Sketch</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {works.colorSketch.reverse().map((image, index) => (
+            <div
+              key={index}
+              className="relative container w-60 h-80 rounded bg-gray-900 overflow-hidden"
+            >
+              <Image
+                src={`/images/works/colorSketch/${image}`}
+                alt="sample"
+                width={240}
+                height={320}
+                className="absolute w-full h-full object-cover object-top"
+              />
+            </div>
+          ))}
+        </div>
 
-      <h3>fullRender</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {works.fullRender.reverse().map((image, index) => (
-          <div
-            key={index}
-            className="relative container w-60 h-80 rounded bg-gray-900 overflow-hidden"
-          >
-            <Image
-              src={`/images/works/fullRender/${image}`}
-              alt="sample"
-              width={240}
-              height={320}
-              className="absolute w-full h-full object-cover object-top"
-            />
-          </div>
-        ))}
-      </div>
-    </section>
+        <h3>Cel Shade</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {works.celShade.reverse().map((image, index) => (
+            <div
+              key={index}
+              className="relative container w-60 h-80 rounded bg-gray-900 overflow-hidden"
+            >
+              <Image
+                src={`/images/works/celShade/${image}`}
+                alt="sample"
+                width={240}
+                height={320}
+                className="absolute w-full h-full object-cover object-top"
+              />
+            </div>
+          ))}
+        </div>
+
+        <h3>fullRender</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {works.fullRender.reverse().map((image, index) => (
+            <div
+              key={index}
+              className="relative container w-60 h-80 rounded bg-gray-900 overflow-hidden"
+            >
+              <Image
+                src={`/images/works/fullRender/${image}`}
+                alt="sample"
+                width={240}
+                height={320}
+                className="absolute w-full h-full object-cover object-top"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }
