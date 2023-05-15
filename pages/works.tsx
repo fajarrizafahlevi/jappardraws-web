@@ -17,6 +17,8 @@ export default function Works() {
       <section>
         <h2>Works</h2>
 
+        {/* <h3 className="text-gray-500 font-bold text-xl">Coming Soon...</h3> */}
+
         <h3>Color Sketch</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {works.colorSketch.reverse().map((image, index) => (
@@ -53,7 +55,7 @@ export default function Works() {
           ))}
         </div>
 
-        <h3>fullRender</h3>
+        <h3>Full Render</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {works.fullRender.reverse().map((image, index) => (
             <div
@@ -70,6 +72,21 @@ export default function Works() {
             </div>
           ))}
         </div>
+
+        {/* <p>
+          Note:
+          <br />
+          Due to my art style update, I don&apos;t have enough samples to put it here yet. If
+          you&apos;re curious with my previous works, you can check them{' '}
+          <a
+            href="https://gallery-jappardraws.carrd.co/"
+            target="_blank"
+            className="underline"
+          >
+            here
+          </a>{' '}
+          or on my social media instead.
+        </p> */}
       </section>
     </>
   );
