@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       className="relative px-8 md:px-16 lg:px-20 pb-0 bg-black md:flex-row-reverse justify-end md:justify-center items-center "
-      style={{ minHeight: '80vh' }}
+      style={{ height: '80vh' }}
     >
       <Image 
         src={hero}
