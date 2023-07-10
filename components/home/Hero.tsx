@@ -10,7 +10,7 @@ export default function Hero() {
     >
       <Image 
         src={hero}
-        height={400}
+        height={360}
         alt='Jappar Draws'
         className='absolute md:static'
       />
