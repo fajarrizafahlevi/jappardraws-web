@@ -10,9 +10,9 @@ export default function Hero() {
     >
       <Image 
         src={hero}
-        height={360}
+        height={700}
         alt='Jappar Draws'
-        className='absolute md:static'
+        className='absolute px-8 md:h-4/5 md:w-auto md:px-0 md:static'
       />
       <div className='absolute z-10 w-full h-full bg-gradient-to-t from-black md:hidden'/>
       <div className="static z-10 flex flex-col gap-3">
