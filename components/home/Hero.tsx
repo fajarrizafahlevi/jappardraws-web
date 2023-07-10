@@ -5,15 +5,17 @@ import hero from '@/public/images/hero.png';
 export default function Hero() {
   return (
     <section
-      className="px-8 md:px-16 lg:px-20 pb-0 bg-black md:flex-row-reverse items-center "
-      style={{ height: '80vh' }}
+      className="relative px-8 md:px-16 lg:px-20 pb-0 bg-black md:flex-row-reverse justify-end md:justify-center items-center "
+      style={{ minHeight: '80vh' }}
     >
       <Image 
         src={hero}
-        width={200}
+        height={400}
         alt='Jappar Draws'
+        className='absolute md:static'
       />
-      <div className="bg-gradient-to-t from-black flex flex-col gap-3">
+      <div className='absolute z-10 w-full h-full bg-gradient-to-t from-black md:hidden'/>
+      <div className="static z-10 flex flex-col gap-3">
         <article className="flex flex-col gap-2">
           <div>
             <h2 className="text-3xl sm:text-4xl">Manifest your</h2>
