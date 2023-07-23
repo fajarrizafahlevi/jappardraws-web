@@ -54,7 +54,7 @@ export default function Service() {
               className="absolute w-full h-full object-cover object-top"
             />
             <div className="absolute z-10 w-full h-full p-8 bg-gradient-to-t from-black flex flex-col justify-end items-center">
-              <h3 className="font-bold text-yellow-300 mb-3">{item.style}</h3>
+              <h3 className="accent font-bold">{item.style}</h3>
               <table className="text-xs">
                 <tr>
                   <th>Head-shot</th>

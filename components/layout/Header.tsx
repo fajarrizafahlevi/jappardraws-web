@@ -9,10 +9,7 @@ export default function Header({ openMenu }: { openMenu: () => void }) {
           <span className="accent">.</span>
         </Link>
       </h1>
-      <button
-        className="sm:hidden border-none px-2 py-1 text-xl"
-        onClick={openMenu}
-      >
+      <button className="sm:hidden text-xl" onClick={openMenu}>
         &#9776;
       </button>
       <nav className="hidden sm:flex items-center gap-8">

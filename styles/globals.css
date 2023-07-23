@@ -2,42 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-section {
-  padding: 80px 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-}
+@layer base {
+  section {
+    padding: 80px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
 
-h2 {
-  font-weight: bold;
-  font-size: xx-large;
-}
+  h2 {
+    font-weight: bold;
+    font-size: xx-large;
+  }
 
-button {
-  border: none;
-  border-radius: 20px;
-  padding: 8px 16px;
-  background-color: #a3e635;
-  color: black;
-}
+  button {
+    @apply bg-lime-500;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    color: black;
+  }
 
-th {
-  text-align: left;
-}
+  th {
+    text-align: left;
+  }
 
-td {
-  text-align: right;
-}
+  td {
+    text-align: right;
+  }
 
-.card {
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-}
+  .card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+  }
 
-.accent {
-  color: #a3e635;
+  .accent {
+    @apply text-lime-500;
+  }
 }
