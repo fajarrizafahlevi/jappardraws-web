@@ -10,10 +10,7 @@ export default function Portfolio() {
       <h2>Latest Works</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {works.latest.map((image, index) => (
-          <div
-            key={index}
-            className="relative container w-60 h-60 rounded bg-gray-900 overflow-hidden"
-          >
+          <div key={index} className="card container w-60 h-60">
             <Image
               src={`/images/latest/${image}`}
               alt="sample"

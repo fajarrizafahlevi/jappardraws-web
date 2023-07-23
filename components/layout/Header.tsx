@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Header({ openMenu }: { openMenu: () => void }) {
   return (
@@ -6,7 +6,7 @@ export default function Header({ openMenu }: { openMenu: () => void }) {
       <h1 className="text-3xl font-bold">
         <Link href="/">
           jappar<span className="text-gray-500">draws</span>
-          <span className="text-yellow-300">.</span>
+          <span className="accent">.</span>
         </Link>
       </h1>
       <button
