@@ -9,7 +9,7 @@ export default function Header({ openMenu }: { openMenu: () => void }) {
           <span className="accent">.</span>
         </Link>
       </h1>
-      <button className="menu sm:hidden text-xl" onClick={openMenu}>
+      <button className="menu sm:hidden text-3xl" onClick={openMenu}>
         &#9776;
       </button>
       <nav className="hidden sm:flex items-center gap-8">
