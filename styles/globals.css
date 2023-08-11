@@ -42,4 +42,10 @@
   .accent {
     @apply text-lime-500;
   }
+
+  .menu {
+    background-color: transparent;
+    padding: 0;
+    color: white;
+  }
 }
