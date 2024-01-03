@@ -65,7 +65,7 @@ export default function Service() {
                   <td>{item.price.bustUp}</td>
                 </tr>
                 <tr>
-                  <th>half-body</th>
+                  <th>Half-body</th>
                   <td>{item.price.halfBody}</td>
                 </tr>
                 <tr>
